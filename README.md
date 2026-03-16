@@ -7,37 +7,24 @@ To develop a convolutional autoencoder for image denoising application.
 
 
 ## DESIGN STEPS
-### STEP 1: 
-
-Write your own steps
-
-### STEP 2: 
-
-
-
-### STEP 3: 
-
-
-
-### STEP 4: 
-
-
-
-### STEP 5: 
-
-
-
-### STEP 6: 
-
-
-
-
+### STEP 1:
+Problem Understanding and Dataset Selection
+### STEP 2:
+Preprocessing the Dataset
+### STEP 3:
+Design the Convolutional Autoencoder Architecture
+### STEP 4:
+Compile and Train the Model
+### STEP 5:
+Evaluate the Model
+### STEP 6:
+Visualization and Analysis
 
 ## PROGRAM
 
-### Name:
+### Name: Mohammad Suhael
 
-### Register Number:
+### Register Number: 212224230164
 
 ```python
 # Autoencoder for Image Denoising using PyTorch
@@ -177,14 +164,17 @@ visualize_denoising(model, test_loader)
 
 ```
 
+
 ### OUTPUT
 
 ### Model Summary
+<img src="model summary.png"/><br>
 
 ### Training loss
+<img src="Screenshot 2026-03-16 150802.png"/><br>
 
 ## Original vs Noisy Vs Reconstructed Image
-Include a few sample images here.
+<img src="Screenshot 2026-03-16 150843.png"/><br>
 
 ## RESULT
-Include your result here
+Thus, the convolutional autoencoder for image denoising was executed successfully.
