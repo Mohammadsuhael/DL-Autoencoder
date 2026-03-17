@@ -27,36 +27,6 @@ Visualization and Analysis
 ### Register Number: 212224230164
 
 ```python
-# Autoencoder for Image Denoising using PyTorch
-
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader
-from torchvision import datasets, transforms
-import matplotlib.pyplot as plt
-import numpy as np
-from torchsummary import summary
-
-# Device configuration
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-# Transform: Normalize and convert to tensor
-transform = transforms.Compose([
-    transforms.ToTensor()
-])
-
-# Load MNIST dataset
-dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-test_dataset = datasets.MNIST(root='./data', train=False, download=True, transform=transform)
-
-train_loader = DataLoader(dataset, batch_size=128, shuffle=True)
-test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False)
-
-# Add noise to images
-def add_noise(inputs, noise_factor=0.5):
-    noisy = inputs + noise_factor * torch.randn_like(inputs)
-    return torch.clamp(noisy, 0., 1.)
 
 # Define Autoencoder
 class DenoisingAutoencoder(nn.Module):
